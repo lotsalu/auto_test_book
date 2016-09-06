@@ -1,5 +1,5 @@
-** Q:浏览器不能打开html问题**
-**A:**
+** Q:浏览器不能打开html问题**      
+** A:**
 *  To workaround in firefox:Go to page about:config ;Set security.csp.enable = false
 *  For resolve your problem you must :
 Connect on your jenkins url \(http:\/\/\[IP\]:8080\/\)
