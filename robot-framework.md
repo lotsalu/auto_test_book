@@ -19,7 +19,7 @@ python setup.py install
 ```
 pip install robotframework-ride
 ```
-或者使用源码安装，
+或者使用源码安装，切换到
 
 ```
 python setup.py install
