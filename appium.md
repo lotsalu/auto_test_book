@@ -9,3 +9,4 @@ AppiumLibrary is modeled after (and forked from) appiumandroidlibrary, but re-i
 
 ** 目的：** 通过本文对于Appium，RobotFramework-appium结合的方法，可以方便搭建Appium自动化测试框架，Case编写简化。
 ## Appium安装
+Appium安装见[环境配置](环境配置.md)的Appium篇。
