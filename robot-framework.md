@@ -22,8 +22,6 @@ pip install robotframework-ride
 或者使用源码安装，
 
 ```
-
 python setup.py install
-
 ```
 
