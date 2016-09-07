@@ -6,7 +6,7 @@
 ```
 pip install framework
 ```
-或者使用源码安装，
+或者使用源码安装，切换到源码目录
 ```
 python setup.py install
 ```
@@ -19,7 +19,7 @@ python setup.py install
 ```
 pip install robotframework-ride
 ```
-或者使用源码安装，切换到
+或者使用源码安装，切换到源码目录
 
 ```
 python setup.py install
