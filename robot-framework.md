@@ -6,4 +6,15 @@
 ```
 pip install framework
 ```
+或者使用源码安装，安装成功即可。
+
+## RIDE
+[RIDE](https://github.com/robotframework/RIDE) is a development environment for Robot Framework test cases.   
+
+** 安装 **
+```
+pip install robotframework-ride
+```
+或者使用源码安装。
+
 
