@@ -26,3 +26,4 @@ pip install robotframework-ride
 python setup.py install
 ```
 
+RIDE 可以做很多事情
