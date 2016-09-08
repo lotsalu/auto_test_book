@@ -24,4 +24,4 @@ Appium安装见[环境配置](环境配置.md)的Appium篇。
 
 ## Appium在Android上的架构
 
-  <img src="appium_3.png" alt="GitHub" title="GitHub,Social Coding" width="800" height="600" /> 
+  <img src="appium_3.png" alt="GitHub" title="GitHub,Social Coding" width="900" height="600" /> 
