@@ -29,3 +29,12 @@ Appium安装见[环境配置](环境配置.md)的Appium篇。
  ## Appium在IOS上的架构
  (这部分暂时没有展开，后续展开)
   <img src="appium_4.png" alt="GitHub" title="GitHub,Social Coding" width="900" height="600" />    
+### Appium 代码例子  
+
+<img src="appium_5.png" alt="GitHub" title="GitHub,Social Coding" width="900" height="600" />    
+### 总结    
+
+*  使用 WebDriver 封装App操作接口，通过HTTP API使多语言的客户端支持成为可能。
+*  异步队列。根据业务需求，将大量操作请求，通过队列的形式逐步分发执行，防止压力过大。
+*  稳定性稍显不足appium 脚本在运行时不十分稳定。
+*  代码不够清晰、简洁工程模块非常多，但是组织不够清晰，代码编写不够简洁。
