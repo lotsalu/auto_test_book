@@ -12,16 +12,20 @@ AppiumLibrary is modeled after (and forked from) appiumandroidlibrary, but re-i
 Appium安装见[环境配置](环境配置.md)的Appium篇。
 ## Appium 项目&原理
 <img src="appium.png" alt="GitHub" title="GitHub,Social Coding" width="750" height="400" />    
-## 目前mobile自动化的方案
+### 目前mobile自动化的方案
 <img src="appium_2.png" alt="GitHub" title="GitHub,Social Coding" width="750" height="600" />    
-## Appium的优点
-* 跨架构，naLve	hybrid	webview
-* 跨设备，android	ios	 ﬁrefoxos
+### Appium的优点
+* 跨架构，native	hybrid	webview
+* 跨设备，android	ios	 ﬁrefox os
 * 跨语言， java	 python	ruby	 nodejs	php
 * 跨app,	 可以在多个app之间交互	 
 * 不依赖源代码
 * 不限制测试框架和平台	  
 
-## Appium在Android上的架构
+### Appium在Android上的架构
+  <img src="appium_3.png" alt="GitHub" title="GitHub,Social Coding" width="900" height="600" />   
 
-  <img src="appium_3.png" alt="GitHub" title="GitHub,Social Coding" width="900" height="600" /> 
+ bootstrap.jar在appium中是以jar包的形式存在的，它实际上是一个uiautomator写的case包，通过PC端的命令可以在手机端执行。
+ ## Appium在IOS上的架构
+ (这部分暂时没有展开，后续展开)
+  <img src="appium_4.png" alt="GitHub" title="GitHub,Social Coding" width="900" height="600" />    
