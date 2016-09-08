@@ -20,5 +20,8 @@ Appium安装见[环境配置](环境配置.md)的Appium篇。
 * 跨语言， java	 python	ruby	 nodejs	php
 * 跨app,	 可以在多个app之间交互	 
 * 不依赖源代码
-* 不限制测试框架和平台	
-  
+* 不限制测试框架和平台	  
+
+## Appium在Android上的架构
+
+  <img src="appium_3.png" alt="GitHub" title="GitHub,Social Coding" width="800" height="600" /> 
