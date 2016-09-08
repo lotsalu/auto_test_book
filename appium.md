@@ -7,7 +7,18 @@ AppiumLibrary is modeled after (and forked from) appiumandroidlibrary, but re-i
 * It support Python 2.x only.
 
 
-** 目的：** 通过本文对于Appium，RobotFramework-appium结合的方法，可以方便搭建Appium自动化测试框架，Case编写简化。
+** 目的：** 通过本文对于Appium，RobotFramework-appium结合的方法，可以方便搭建Appium自动化测试框架，Case编写简化。如果不关注原理，可以略过下面的Appium 项目&原理。
 ## Appium安装
 Appium安装见[环境配置](环境配置.md)的Appium篇。
-## Appium 原理
+## Appium 项目&原理
+<img src="appium.png" alt="GitHub" title="GitHub,Social Coding" width="750" height="400" />    
+## 目前mobile自动化的方案
+<img src="appium_2.png" alt="GitHub" title="GitHub,Social Coding" width="750" height="600" />    
+## Appium的优点
+* 跨架构，naLve	hybrid	webview
+* 跨设备，android	ios	 ﬁrefoxos
+* 跨语言， java	 python	ruby	 nodejs	php
+* 跨app,	 可以在多个app之间交互	 
+* 不依赖源代码
+* 不限制测试框架和平台	
+  
