@@ -1,16 +1,14 @@
 # Appium
 [Appium](https://github.com/appium/appium) 是一个移动测试框架，支持ios，android，firefox os，同时还支持H5混合应用。
-** 官方介绍：**  
-* AppiumLibrary is an appium testing library for RobotFramework.
-* It uses Appium (version 1.x) to communicate with Android and iOS application similar to how Selenium WebDriver talks to web browser.
-AppiumLibrary is modeled after (and forked from) appiumandroidlibrary, but re-implemented to use appium 1.X technologies.
-* It support Python 2.x only.
+ 
+
 
 
 ** 目的：** 通过本文对于Appium，RobotFramework-appium结合的方法，可以方便搭建Appium自动化测试框架，Case编写简化。如果不关注原理，可以略过下面的Appium 项目&原理。
 ## Appium安装
 Appium安装见[环境配置](环境配置.md)的Appium篇。
 ## Appium 项目&原理
+** 官方介绍：** 
 <img src="appium.png" alt="GitHub" title="GitHub,Social Coding" width="750" height="400" />    
 ### 目前mobile自动化的方案
 <img src="appium_2.png" alt="GitHub" title="GitHub,Social Coding" width="750" height="600" />    
@@ -38,3 +36,10 @@ Appium安装见[环境配置](环境配置.md)的Appium篇。
 *  异步队列。根据业务需求，将大量操作请求，通过队列的形式逐步分发执行，防止压力过大。
 *  稳定性稍显不足appium 脚本在运行时不十分稳定。
 *  代码不够清晰、简洁工程模块非常多，但是组织不够清晰，代码编写不够简洁。
+*  多机支持不够简单one server To one client 架构导致多设备支持略麻烦。
+## RobotFramework+Appium 
+
+* AppiumLibrary is an appium testing library for RobotFramework.
+* It uses Appium (version 1.x) to communicate with Android and iOS application similar to how Selenium WebDriver talks to web browser.
+AppiumLibrary is modeled after (and forked from) appiumandroidlibrary, but re-implemented to use appium 1.X technologies.
+* It support Python 2.x only.
