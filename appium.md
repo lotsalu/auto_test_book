@@ -43,13 +43,18 @@ AppiumLibrary is modeled after (and forked from) appiumandroidlibrary, but re-i
 * It support Python 2.x only.  
 
 ## RobotFramework+Appium 的测试用例演示
-*  启动应用
+*  启动应用  
+
 <img src="appium_6.png" alt="GitHub" title="GitHub,Social Coding" width="800" height="200" /> 
-*  Login 
+*  Login   
+
 <img src="appium_7.png" alt="GitHub" title="GitHub,Social Coding" width="800" height="400" /> 
-* Case
+* Case  
+
 <img src="appium_8.png" alt="GitHub" title="GitHub,Social Coding" width="800" height="600" />   
-*  性能结合测试
+
+## 性能结合测试  
+
 由于robot framework 并不包含性能测试API，所以需要自己设计性能模块。这里采用MCM(Memory CPU Monitor),来源testerhome,之前做手机整机测试使用过，表现如下。
 <img src="mcm1.png" alt="GitHub" title="GitHub,Social Coding" width="800" height="600" /> 
 <img src="mcm2.png" alt="GitHub" title="GitHub,Social Coding" width="800" height="300" /> 
