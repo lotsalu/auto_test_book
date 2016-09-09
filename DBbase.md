@@ -4,7 +4,8 @@
 ```
 pip install robotframework-databaselibrary
 ```
-安装完成后可以继续安装psycopg2，用来连接PostgreSQL 数据库；
+安装完成后可以继续安装psycopg2，用来连接PostgreSQL 数据库；  
+
 <img src="pic/db1.png" alt="GitHub" title="GitHub,Social Coding" width="800" height="200" />   
 ```
 pip install psycopg2
@@ -37,4 +38,4 @@ pip install psycopg2
 
 <img src="pic/db4.png" alt="GitHub" title="GitHub,Social Coding" width="800" height="300" />   
 **结果**
-<img src="pic/db5.png" alt="GitHub" title="GitHub,Social Coding" width="800" height="500" />   
+<img src="pic/db5.png" alt="GitHub" title="GitHub,Social Coding" width="800" height="800" />   
