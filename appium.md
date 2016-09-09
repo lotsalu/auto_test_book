@@ -40,4 +40,12 @@ Appium安装见[环境配置](环境配置.md)的Appium篇。
 * AppiumLibrary is an appium testing library for RobotFramework.
 * It uses Appium (version 1.x) to communicate with Android and iOS application similar to how Selenium WebDriver talks to web browser.
 AppiumLibrary is modeled after (and forked from) appiumandroidlibrary, but re-implemented to use appium 1.X technologies.
-* It support Python 2.x only.
+* It support Python 2.x only.  
+
+## RobotFramework+Appium 的测试用例演示
+*  启动应用
+<img src="appium_6.png" alt="GitHub" title="GitHub,Social Coding" width="800" height="200" /> 
+*  Login 
+<img src="appium_7.png" alt="GitHub" title="GitHub,Social Coding" width="800" height="400" /> 
+* Case
+<img src="appium_8.png" alt="GitHub" title="GitHub,Social Coding" width="800" height="600" /> 
