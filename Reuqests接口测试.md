@@ -1,5 +1,5 @@
 # Python Requests 接口测试
-包含接口测试、
+包含接口测试、具体case，Jenkins集成。
 ## 接口测试
 接口测试的英文是interface testing，是测试系统组件间接口的一种测试。接口测试主要用于检测外部系统与系统之间以及内部各个子系统之间的交互点。测试的重点是要检查数据的交换，传递和控制管理过程，以及系统间的相互逻辑依赖关系等
 ### 狭义定义
@@ -66,4 +66,8 @@ Case 如下：例子是通过抓包工具得到的数据：
 
 具体结果如下：  
 
-<img src="pic/re5.png" alt="GitHub" title="GitHub,Social Coding" width="900" height="700" /> 
+<img src="pic/re5.png" alt="GitHub" title="GitHub,Social Coding" width="900" height="700" />   
+
+## Jenkins集成。
+
+具体见[持续化集成测试](持续化集成测试.md)

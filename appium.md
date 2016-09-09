@@ -21,13 +21,13 @@ Appium安装见[环境配置](环境配置.md)的Appium篇。
   <img src="appium_3.png" alt="GitHub" title="GitHub,Social Coding" width="900" height="600" />   
 
  bootstrap.jar在appium中是以jar包的形式存在的，它实际上是一个uiautomator写的case包，通过PC端的命令可以在手机端执行。  
- ## appium 在android端工作流 
+ ## appium 在android端工作流
   <img src="pic/appium_11.png" alt="GitHub" title="GitHub,Social Coding" width="900" height="600" />   
  >在Android端，appium基于WebDriver协议，利用Bootstrap.jar，最后通过调⽤用UiAutomator的命令，实现App的自动化测试。
 >UiAutomator测试框架是Android SDK自带的App UI自动化测试Java库。
 >另外由于UiAutomator对H5的支持有限，appium引入了chromedriver以及safaridriver等来实现基于H5的自动化。   
 
- 
+
 
 
 * client端也就是我们 test script是我们的webdriver测试脚本。
@@ -45,7 +45,7 @@ Bootstrap监听4724端口并接收appium 的命令，最终通过调⽤用UiAuto
 ## Appium在IOS上的架构  
  (这部分暂时没有展开，后续展开)  
 
- 
+
 <img src="appium_4.png" alt="GitHub" title="GitHub,Social Coding" width="900" height="600" /> 
 
 
@@ -61,7 +61,7 @@ Bootstrap监听4724端口并接收appium 的命令，最终通过调⽤用UiAuto
 *  代码不够清晰、简洁工程模块非常多，但是组织不够清晰，代码编写不够简洁。
 *  多机支持不够简单one server To one client 架构导致多设备支持略麻烦。
 
-## RobotFramework+Appium 
+## RobotFramework+Appium
 ** 官方介绍：**
 * AppiumLibrary is an appium testing library for RobotFramework.
 * It uses Appium (version 1.x) to communicate with Android and iOS application similar to how Selenium WebDriver talks to web browser.
@@ -71,10 +71,10 @@ AppiumLibrary is modeled after (and forked from) appiumandroidlibrary, but re-i
 ## RobotFramework+Appium 的测试用例演示
 *  启动应用  
 
-<img src="appium_6.png" alt="GitHub" title="GitHub,Social Coding" width="800" height="200" /> 
+<img src="appium_6.png" alt="GitHub" title="GitHub,Social Coding" width="800" height="200" />
 *  Login   
 
-<img src="appium_7.png" alt="GitHub" title="GitHub,Social Coding" width="800" height="400" /> 
+<img src="appium_7.png" alt="GitHub" title="GitHub,Social Coding" width="800" height="400" />
 * Case  
 
 <img src="appium_8.png" alt="GitHub" title="GitHub,Social Coding" width="800" height="600" />   
@@ -98,8 +98,8 @@ report
 <img src="pic/mcm7.png" alt="GitHub" title="GitHub,Social Coding" width="800" height="200" />
 *  图像如下：  
 
-<img src="mcm1.png" alt="GitHub" title="GitHub,Social Coding" width="800" height="600" /> 
-<img src="mcm2.png" alt="GitHub" title="GitHub,Social Coding" width="800" height="300" /> 
+<img src="mcm1.png" alt="GitHub" title="GitHub,Social Coding" width="800" height="600" />
+<img src="mcm2.png" alt="GitHub" title="GitHub,Social Coding" width="800" height="300" />
 <img src="mcm3.png" alt="GitHub" title="GitHub,Social Coding" width="800" height="300" />
 <img src="mcm4.png" alt="GitHub" title="GitHub,Social Coding" width="800" height="300" />
 <img src="mcm5.png" alt="GitHub" title="GitHub,Social Coding" width="800" height="300" />
