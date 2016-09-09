@@ -20,10 +20,36 @@ Appium安装见[环境配置](环境配置.md)的Appium篇。
 ### Appium在Android上的架构
   <img src="appium_3.png" alt="GitHub" title="GitHub,Social Coding" width="900" height="600" />   
 
- bootstrap.jar在appium中是以jar包的形式存在的，它实际上是一个uiautomator写的case包，通过PC端的命令可以在手机端执行。
- ## Appium在IOS上的架构
- (这部分暂时没有展开，后续展开)
-  <img src="appium_4.png" alt="GitHub" title="GitHub,Social Coding" width="900" height="600" />    
+ bootstrap.jar在appium中是以jar包的形式存在的，它实际上是一个uiautomator写的case包，通过PC端的命令可以在手机端执行。  
+ ## appium 在android端工作流 
+  <img src="pic/appium_11.png" alt="GitHub" title="GitHub,Social Coding" width="900" height="600" />   
+ >在Android端，appium基于WebDriver协议，利用Bootstrap.jar，最后通过调⽤用UiAutomator的命令，实现App的自动化测试。
+>UiAutomator测试框架是Android SDK自带的App UI自动化测试Java库。
+>另外由于UiAutomator对H5的支持有限，appium引入了chromedriver以及safaridriver等来实现基于H5的自动化。   
+
+ 
+
+
+* client端也就是我们 test script是我们的webdriver测试脚本。
+
+* 中间是起的Appium的服务，Appium在服务端起了一个Server（4723端口），跟selenium
+Webdriver测试框架类似， Appium⽀持标准的WebDriver JSONWireProtocol。在这里提供它提供了一套REST的接口,Appium Server接收web driver client标准rest请求，解析请求内容，调⽤用对应的框架响应操作。
+
+* appium server会把请求转发给中间件Bootstrap.jar ，它是用java写的，安装在手机上.
+Bootstrap监听4724端口并接收appium 的命令，最终通过调⽤用UiAutomator的命令来实现。
+
+* 最后Bootstrap将执行的结果返回给appium server。
+
+* appium server再将结果返回给 appium client。
+
+## Appium在IOS上的架构  
+ (这部分暂时没有展开，后续展开)  
+
+ 
+<img src="appium_4.png" alt="GitHub" title="GitHub,Social Coding" width="900" height="600" /> 
+
+
+
 ### Appium 代码例子  
 
 <img src="appium_5.png" alt="GitHub" title="GitHub,Social Coding" width="900" height="600" />    
@@ -70,3 +96,17 @@ AppiumLibrary is modeled after (and forked from) appiumandroidlibrary, but re-i
 
 ## Appium多台设备共同调试
 
+<img src="pic/appium_9.png" alt="GitHub" title="GitHub,Social Coding" width="800" height="300" />
+关于appium并发，我将之分为2类，第一类单机并发。第二类基于selenium grid 多节点并发测试,也可称之为云测。
+
+appium 单机并发
+
+Android并发测试
+Appium提供了在一台设备上启动多个Android会话的方案。
+```
+appium -p 4492 -bp 2251 -U 32456
+```
+启动多个Android会话的重要指令包括：
+
+
+<img src="pic/appium_12.png" alt="GitHub" title="GitHub,Social Coding" width="800" height="300" />
