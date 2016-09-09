@@ -109,4 +109,11 @@ appium -p 4492 -bp 2251 -U 32456
 启动多个Android会话的重要指令包括：
 
 
-<img src="pic/appium_12.png" alt="GitHub" title="GitHub,Social Coding" width="800" height="300" />
+<img src="pic/appium_12.png" alt="GitHub" title="GitHub,Social Coding" width="800" height="300" />  
+
+** 总结:
+单机并发目前只能在android实现，且必须启动n个appium server 对应不同devices，这里devices可以是真机或模拟器。但是必须保证端口后没有重复使用。
+接下来工作就是利用测试框架(testng,jasmine,rspec,cucumber等)将测试分发到不同appium server上。 **
+
+## appium grid 分布式并发
+appium grid 分布式并发暂时不表。
