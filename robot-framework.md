@@ -13,7 +13,7 @@
 ```
 pip install robotframework
 ```
-<span id="1">安装</span>
+##<span id="1">安装</span>
 
 需要先配置Python2.7,pip  
 ```
@@ -25,7 +25,7 @@ python setup.py install
 ```
 安装成功即可。
 
-<span id="2">RIDE </span>
+## <span id="2">RIDE </span>
 
 > ** 官方介绍：** [RIDE](https://github.com/robotframework/RIDE) is a development environment for Robot Framework test cases.     
 *   RIDE是Robot的第三方测试用例编辑器，可编辑用例，编辑关键字等并生成HTML，TXT等格式的文件。同时RIDE可直接可进行测试执行。RIDE是基于wxPython进行开发，所以安装RIDE前需要先行安装wxPython，其官方网站为：http://www.wxpython.org/。
@@ -44,7 +44,7 @@ python setup.py install
 ```
 
 RIDE 可以做很多事情
-<span id="3">RIDE Case 管理</span>
+##<span id="3">RIDE Case 管理</span>
 
 
 q

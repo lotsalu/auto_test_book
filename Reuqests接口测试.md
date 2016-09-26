@@ -1,6 +1,11 @@
 # Python Requests 接口测试
+* 索引
+* [接口测试](#1)
+* [Http Requests](#2)
+* [Robot Framework Requests](#3)
+
 包含接口测试、具体case，Jenkins集成。
-## 接口测试
+##<span id="1"> 接口测试</span>
 接口测试的英文是interface testing，是测试系统组件间接口的一种测试。接口测试主要用于检测外部系统与系统之间以及内部各个子系统之间的交互点。测试的重点是要检查数据的交换，传递和控制管理过程，以及系统间的相互逻辑依赖关系等
 ### 狭义定义
 通常，我们软件测试中所说的接口测试，是指外部接口中用于与外部系统交互接口及软件系统内部模块/组件或子系统之间的内部接口测试。例如：    
@@ -42,14 +47,14 @@ class 猫 implements 动物 { void 叫() { System.out.println("喵"); } }
 * **促使项目开发过程的规范化**  
 要进行接口，需要完善的文档进行保障，没有测试文档，接口测试将寸步难行，接口测试将增加开发过程规范化产出，而规范化产出也保证了项目质量.   
 
-## Http Requests   
+## <span id="2">Http Requests</span>   
 Requests 提供了几乎所有HTTP动词的功能：GET、OPTIONS、HEAD、POST、PUT、PATCH、DELETE。  
 **例子：**  
 <img src="pic/requests1.png" alt="GitHub" title="GitHub,Social Coding" width="900" height="400" />   
 
 API：http://docs.python-requests.org/zh_CN/latest/api.html#sessionapi
 
-## Robot Framework Requests  
+## <span id ="3">Robot Framework Requests</span>  
 Github：https://github.com/bulkan/robotframework-requests  
 <img src="pic/re2.png" alt="GitHub" title="GitHub,Social Coding" width="900" height="300" />  
 
