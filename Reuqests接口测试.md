@@ -68,6 +68,9 @@ Case 如下：例子是通过抓包工具得到的数据：
 
 <img src="pic/re5.png" alt="GitHub" title="GitHub,Social Coding" width="900" height="700" />   
 
+## Case管理
+
+
 ## Jenkins集成。
 
 具体见[持续化集成测试](持续化集成测试.md)
