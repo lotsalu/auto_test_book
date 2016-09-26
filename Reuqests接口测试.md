@@ -3,6 +3,9 @@
 * [接口测试](#1)
 * [Http Requests](#2)
 * [Robot Framework Requests](#3)
+* [具体case](#4)
+* [Case管理](#5)
+* [Jenkins集成](#6)
 
 包含接口测试、具体case，Jenkins集成。
 ##<span id="1"> 接口测试</span>
@@ -61,7 +64,7 @@ Github：https://github.com/bulkan/robotframework-requests
 安装之后，就可以使用ride编写测试用例。
 API文档：http://bulkan.github.io/robotframework-requests/，  注意查看API。
 
-## 具体case  
+## <span id = "4">具体case</span>  
 *  加载库如下：  
  
 <img src="pic/re3.png" alt="GitHub" title="GitHub,Social Coding" width="900" height="300" />  
@@ -73,9 +76,9 @@ Case 如下：例子是通过抓包工具得到的数据：
 
 <img src="pic/re5.png" alt="GitHub" title="GitHub,Social Coding" width="900" height="700" />   
 
-## Case管理
+## <span id = "5">Case管理</span>
 关于case 管理这块，主要还是按照ride的思想来管理。
 
-## Jenkins集成。
+## <span id = "6">Jenkins集成</span>  
 
 具体见[持续化集成测试](持续化集成测试.md)
