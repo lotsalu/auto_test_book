@@ -45,7 +45,9 @@ python setup.py install
 
 RIDE 可以做很多事情
 ##<span id="3">RIDE Case 管理</span>
-
+首先是Project，如图  
+<img src="pic/rf1.png" alt="GitHub" title="GitHub,Social Coding" width="400" height="200" />  
+<img src="pic/rf2.png" alt="GitHub" title="GitHub,Social Coding" width="700" height="200" />
 
 q
 
