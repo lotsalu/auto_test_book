@@ -69,7 +69,7 @@ Case 如下：例子是通过抓包工具得到的数据：
 <img src="pic/re5.png" alt="GitHub" title="GitHub,Social Coding" width="900" height="700" />   
 
 ## Case管理
-
+关于case 管理这块，主要还是按照ride的思想来管理。
 
 ## Jenkins集成。
 

@@ -1,13 +1,16 @@
 ## Robot Framework
+* 目录
+* [1.安装](##安装)
+* [3.RIDE Case 管理](##RIDE Case 管理)
 >  
 * Robot Framework是一个通用的关键字驱动自动化测试框架。测试用例以HTML，纯文本或TSV（制表符分隔的一系列值）文件存储。通过测试库中实现的关键字驱动被测软件。Robot Framework灵活且易于扩展。它非常适合测试有不同接口的复杂软件：用户接口、命令行，Web服务，专有的编程接口等。
 * Robot Framework支持Python和Jython，推荐使用python2.7
-*  使用pip 安装 
+*  使用pip 安装  
+
 ```
 pip install robotframework
 ```
-
-** 安装**
+##安装
 
 需要先配置Python2.7,pip  
 ```
@@ -37,3 +40,4 @@ python setup.py install
 ```
 
 RIDE 可以做很多事情
+##RIDE Case 管理
