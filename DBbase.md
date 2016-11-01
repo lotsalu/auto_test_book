@@ -38,4 +38,5 @@ pip install psycopg2
 
 <img src="pic/db4.png" alt="GitHub" title="GitHub,Social Coding" width="800" height="300" />   
 **结果**
-<img src="pic/db5.png" alt="GitHub" title="GitHub,Social Coding" width="800" height="800" />   
+<img src="pic/db5.png" alt="GitHub" title="GitHub,Social Coding" width="800" height="800" /> 
+  

@@ -10,17 +10,17 @@
 * Robot Framework支持Python和Jython，推荐使用python2.7
 *  使用pip 安装  
 
-```
+```dos
 pip install robotframework
 ```
 ##<span id="1">安装</span>
 
 需要先配置Python2.7,pip  
-```
+```dos
 pip install framework
 ```
 或者使用源码安装，切换到源码目录
-```
+```dos
 python setup.py install
 ```
 安装成功即可。
@@ -34,12 +34,12 @@ python setup.py install
  
 
 ** 安装RIDE **
-```
+```dos
 pip install robotframework-ride
 ```
 或者使用源码安装，切换到源码目录
 
-```
+```dos
 python setup.py install
 ```
 
@@ -49,5 +49,5 @@ RIDE 可以做很多事情
 <img src="pic/rf1.png" alt="GitHub" title="GitHub,Social Coding" width="400" height="200" />  
 <img src="pic/rf2.png" alt="GitHub" title="GitHub,Social Coding" width="700" height="200" />
 
-q
+
 
