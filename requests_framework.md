@@ -148,5 +148,9 @@ python  Smoke_web_TestRunner.py  >  Smoke_web_TestReport.html
 * 为了在结果报告中区分是否成功与报错信息，需要添加assert，具体见上面smoke_web_test_xxx.py
 * 对于需要打印到结果的信息，直接print即可，已经封装了流的方法。
 * 对于headers和data里面的参数，尽量使用参数化，参数类型为str，这点需要注意，headers、data均为dict。
+* 每个方法的注释请加上作者名称，如果整个类是由一个人完成的，则只需在类文件中加上作者即可
+* 有变量都要参数化；如用例编号、提求信息等；目的：方便后续维护与拓展
+* 对于一些经常使用的方法，要适量封装。如果是很多模块都适用，则需要放入public_functions中。
+* 判断返回值是否正确，统一使用assert。
 
 
