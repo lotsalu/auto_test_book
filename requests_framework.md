@@ -1,7 +1,7 @@
 #Python Requests Auto Test Framework
 ## 一、格式
 **例子**
-smoke_web_test_xxx.py
+smoke_web_test_xxx.py,这里的xxx代表模块，比如考勤。
 ```python
 class SmokeTestCase(unittest.TestCase):
     '''
@@ -146,5 +146,7 @@ python  Smoke_web_TestRunner.py  >  Smoke_web_TestReport.html
 * 一个方法尽可以只测试一个用例，所有的方法命名均为test_用例名称；
 * 尽量做到一个功能特性只有一个class测试类，类的名称为smoke_web_xxxx(),client_smoke_xxx(),xxxx表示模块，
 * 为了在结果报告中区分是否成功与报错信息，需要添加assert，具体见上面smoke_web_test_xxx.py
+* 对于需要打印到结果的信息，直接print即可，已经封装了流的方法。
+* 对于headers和data里面的参数，尽量使用参数化，参数类型为str，这点需要注意，headers、data均为dict。
 
 
