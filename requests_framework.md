@@ -1,7 +1,7 @@
 #Python Requests Auto Test Framework
 ## 一、格式
 **例子**
-smoke_web_test_suite.py
+smoke_web_test_xxx.py
 ```python
 class SmokeTestCase(unittest.TestCase):
     '''
@@ -112,7 +112,39 @@ def login_func(host, tenantname, code, password):
 如下图所示：
 <img src="pic/requests_framework_1.PNG" alt="GitHub" title="GitHub,Social Coding" width="900" height="700" />
 **上图为结果报告，需要结果在runner下进行设置；具体如下：**  
+Smoke_web_TestRunner.py
+```python
+ def test_main(self):
+        # Run HTMLTestRunner. Verify the HTML report.
 
+        # suite of TestCases
+        self.suite = unittest.TestSuite()
+        self.suite.addTests([
+            #在这里添加要执行的class，注意啊，class。在执行这一步需要导入模块的testsuite。
+            unittest.defaultTestLoader.loadTestsFromTestCase(smoke.SmokeTestCase),
+            unittest.defaultTestLoader.loadTestsFromTestCase(aaaa),
+            ])
 
+        # Invoke TestRunner
+        buf = StringIO.StringIO()
+        #runner = unittest.TextTestRunner(buf)       #DEBUG: this is the unittest baseline
+        runner = HTMLTestRunner.HTMLTestRunner(
+                    stream=buf,
+                    title='<Smoke Test>',
+                    description='Smoke Test Report,just for test'
+                    )
+        runner.run(self.suite)
+```
+然后在dos里面执行命令
+```dos
+python  Smoke_web_TestRunner.py  >  Smoke_web_TestReport.html
+```
+然后就可以看到如上图的报告了。**一般调试过程中不需要每次都生成报告**。
+
+## 三、约定
+对于case 编写过程中，除了需要添加上面的注释，还需要按照约定来编写相应的代码。具体如下：  
+* 一个方法尽可以只测试一个用例，所有的方法命名均为test_用例名称；
+* 尽量做到一个功能特性只有一个class测试类，类的名称为smoke_web_xxxx(),client_smoke_xxx(),xxxx表示模块，
+* 为了在结果报告中区分是否成功与报错信息，需要添加assert，具体见上面smoke_web_test_xxx.py
 
 
