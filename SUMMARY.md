@@ -7,4 +7,5 @@
 * [Reuqests接口测试](Reuqests接口测试.md)
 * [数据库测试](DBbase.md)
 * [持续化集成测试](持续化集成测试.md)
+* [python requests framework](requests_framework.md)
 * [FAQ](faq.md)
