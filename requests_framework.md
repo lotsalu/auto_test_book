@@ -140,7 +140,51 @@ Smoke_web_TestRunner.py
 python  Smoke_web_TestRunner.py  >  Smoke_web_TestReport.html
 ```
 然后就可以看到如上图的报告了。**一般调试过程中不需要每次都生成报告**。
-
+**这里说下具体的smoke case如下**
+```python
+    # 测试添加采购单是否成功。
+    def test_Esss_Save_New_Purcharse_Order_WithRemark(self):
+        u'测试添加采购单是否成功'
+        '''
+        测试添加采购单with remark 是否成功。
+        :return:
+        '''
+        remark = 'aaa'
+        print cookies
+        # 初始化采购单，使采购单不存在remark为‘aaa’的采购单
+        PurcharseOrder_id = Web_Method_Orderlist.Esss_Findid_PurcharseOrder_byRemark_returnid(cookies, remark)
+        print PurcharseOrder_id
+        # 审批所有未审批remark ‘aaa’的采购单
+        if len(PurcharseOrder_id) > 0:
+            for id in PurcharseOrder_id:
+                r = Web_Method_Orderlist.Esss_Confirm_Nonchecked_Purcharse_Order(cookies, id)
+                self.assertEqual(r.json()[u'message'], u'审批成功！', msg='审批已有的订单成功')
+            #从这里开始case 正文
+            r = Web_Method_Orderlist.Esss_Save_New_Purcharse_Order(cookies, remark)
+            print r.status_code
+            print r.json()
+            self.assertEqual(r.status_code, 200, msg='Esss_Save_New_Purcharse_Order is ok')
+            print '------------------------------'
+            print r.json()[u'message']
+            self.assertEqual(r.json()[u'code'], '1', msg='添加成功')
+            # 通过查询接口查看是否添加成功
+            self.assertEqual(len(Web_Method_Orderlist.Esss_Findid_PurcharseOrder_byRemark_returnid(cookies, remark)), 1,
+                             msg="添加成功")
+            print len(Web_Method_Orderlist.Esss_Findid_PurcharseOrder_byRemark_returnid(cookies, remark))
+        else:
+            # 添加remark为 aaa的采购单
+            r = Web_Method_Orderlist.Esss_Save_New_Purcharse_Order(cookies, remark)
+            print r.status_code
+            print r.json()
+            self.assertEqual(r.status_code, 200, msg='Esss_Save_New_Purcharse_Order is ok')
+            print '------------------------------'
+            print r.json()[u'message']
+            self.assertEqual(r.json()[u'code'], '1', msg='添加成功')
+            self.assertEqual(len(Web_Method_Orderlist.Esss_Findid_PurcharseOrder_byRemark_returnid(cookies, remark)), 1,
+                             msg="添加成功")
+            print len(Web_Method_Orderlist.Esss_Findid_PurcharseOrder_byRemark_returnid(cookies, remark))
+```
+上面是具体的smoke中的一条case，具体的分为三个部分，case中的预处理，case具体执行，校验，这里并没有编写执行后的归零操作，可以按照具体的业务流程编写，归零错做。
 ## 三、约定
 对于case 编写过程中，除了需要添加上面的注释，还需要按照约定来编写相应的代码。具体如下：  
 1. 一个方法尽可以只测试一个用例，所有的方法命名均为test_用例名称；
