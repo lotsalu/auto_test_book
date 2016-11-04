@@ -4,6 +4,8 @@
 smoke_web_test_xxx.py,这里的xxx代表模块，比如考勤。
 ```python
 class SmokeTestCase(unittest.TestCase):
+	u'web smoke test xxx'
+    Message='author:lulei'
     '''
     1、此类用于编写smoke test case 的，在禅道上面表现为：关键字为smoke；
     '''
@@ -76,6 +78,8 @@ def req_post(url, headers, data):
 
 
 def login_func(host, tenantname, code, password):
+	u'基础登录方法'
+    Message='author:lulei'
     '''
     base function ,登录，主要用于cookies产生
     :param host:
@@ -115,6 +119,7 @@ def login_func(host, tenantname, code, password):
 Smoke_web_TestRunner.py
 ```python
  def test_main(self):
+ 	Message='author:lulei'
         # Run HTMLTestRunner. Verify the HTML report.
 
         # suite of TestCases
@@ -145,6 +150,7 @@ python  Smoke_web_TestRunner.py  >  Smoke_web_TestReport.html
     # 测试添加采购单是否成功。
     def test_Esss_Save_New_Purcharse_Order_WithRemark(self):
         u'测试添加采购单是否成功'
+        Message='author:lulei'
         '''
         测试添加采购单with remark 是否成功。
         :return:
