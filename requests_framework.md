@@ -1,4 +1,12 @@
 #Python Requests Auto Test Framework
+| version |time  |content|remark|
+|-----|----|
+|v0.21|20161103|add property|nothing|
+
+[TOC]
+
+
+
 ## 一、格式
 **例子**
 smoke_web_test_xxx.py,这里的xxx代表模块，比如考勤。
@@ -145,7 +153,8 @@ Smoke_web_TestRunner.py
 python  Smoke_web_TestRunner.py  >  Smoke_web_TestReport.html
 ```
 然后就可以看到如上图的报告了。**一般调试过程中不需要每次都生成报告**。
-**这里说下具体的smoke case如下**
+##三、具体smoke case
+这里说下具体的smoke case如下
 ```python
     # 测试添加采购单是否成功。
     def test_Esss_Save_New_Purcharse_Order_WithRemark(self):
@@ -191,7 +200,42 @@ python  Smoke_web_TestRunner.py  >  Smoke_web_TestReport.html
             print len(Web_Method_Orderlist.Esss_Findid_PurcharseOrder_byRemark_returnid(cookies, remark))
 ```
 上面是具体的smoke中的一条case，具体的分为三个部分，case中的预处理，case具体执行，校验，这里并没有编写执行后的归零操作，可以按照具体的业务流程编写，归零错做。
-## 三、约定
+##四、Property 
+```python
+#coding=utf-8
+
+class base_property():
+    '''
+    这部分使用来设置参数属性
+    '''
+    def __init__(self):
+        self._Tenantname = None
+        self._code = None
+        self._password = None
+    @property
+    def Tenantname(self):
+        '''
+        设置Tenantname :企业号码
+        :return:
+        '''
+        return self._Tenantname
+
+    @Tenantname.setter
+    def Tenantname(self,tenantname):
+        '''
+        设置企业号，并且校验是否为str
+        :param tenantname:
+        :return: tenantname
+        '''
+        if not isinstance(tenantname,str):
+            raise ValueError('tenantname must be a str!')
+        self._Tenantname = tenantname
+```
+上面代码中设置企业号的propery，
+
+
+
+## 五、约定
 对于case 编写过程中，除了需要添加上面的注释，还需要按照约定来编写相应的代码。具体如下：  
 1. 一个方法尽可以只测试一个用例，所有的方法命名均为test_用例名称；
 2. 尽量做到一个功能特性只有一个class测试类，类的名称为smoke_web_xxxx(),client_smoke_xxx(),xxxx表示模块，
@@ -202,8 +246,9 @@ python  Smoke_web_TestRunner.py  >  Smoke_web_TestReport.html
 7. 有变量都要参数化；如用例编号、提求信息等；目的：方便后续维护与拓展
 8. 对于一些经常使用的方法，要适量封装。如果是很多模块都适用，则需要放入public_functions中。
 9. 判断返回值是否正确，统一使用assert。
-* *update：20161103:*
+*update：20161103:*
 10. Case暂时分为smoke和system test 两种case，st为系统测试，为具体业务case；smoke为接口case，检测接口是否正确，后续文档中表述。建议大家先写smoke，
 11. ***任何case的内容都应该包含初始化、case执行、校验、和执行后的归零操作，1. 初始化为case的准备操作，如果所有的case都需要执行同样的操作，这部分可以放到setUp（）里面执行， ***
 
-后续持续更新a
+
+后续持续更新
