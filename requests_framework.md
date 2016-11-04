@@ -231,7 +231,21 @@ class base_property():
             raise ValueError('tenantname must be a str!')
         self._Tenantname = tenantname
 ```
-上面代码中设置企业号的propery，
+上面代码中设置企业号的property，使用方法如下
+```python
+#coding=utf-8
+import unittest
+import base_property
+
+bp = base_property.base_property
+bp.Tenantname = "ywcsb"
+bp.code = 'zhouyong'
+bp.password = 'a111111'
+class ST_base(unittest.TestCase):
+    def test(self):
+        print '\n'+bp.Tenantname
+        print bp.code
+```
 
 
 
